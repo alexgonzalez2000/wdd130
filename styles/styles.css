@@ -1,3 +1,26 @@
+main {
+    max-width: 840px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+aside {
+    width: 20rem;
+    margin: 5px;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: navy;
+    color: white;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -22,5 +45,11 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+footer {
+    margin-top: 10px;
+    border-top: 1px solid black;
+    text-align: center;
 }
