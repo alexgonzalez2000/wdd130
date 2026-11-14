@@ -18,6 +18,10 @@ main {
     max-width: 1000px;
 }
 
+h1 {
+    margin-left: 15px;
+}
+
 main img {
     width: 150px;
     height: var(--height);
@@ -32,9 +36,10 @@ aside {
     width: 20em;
     margin: 5px;
     border: var(--border);
-    padding: 5px;
-    background-color: navy;
+    padding: 3rem 5px 0 5px;
+    background-color: skyblue;
     color: white;
+    font-weight: bold;
     position: relative;
 }
 
@@ -45,9 +50,9 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 50px;
-    left: 50px;
-    color: #000;
+    top: 10px;
+    left: 45px;
+    color: navy;
 }
 
 nav {
