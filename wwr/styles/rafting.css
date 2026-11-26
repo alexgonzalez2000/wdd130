@@ -16,7 +16,6 @@
 header img {
     height: 150px;
     width: auto;
-
 }
 
 body {
@@ -29,6 +28,15 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--accent2-color);
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -39,6 +47,67 @@ nav, p, section, article {
     margin: 16px;
     padding: 8px;
     color: var(--primary-color);
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li {
+    border: 3px solid black;
+    padding: 0.25em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--secondary-color);
+}
+
+.history img {
+    height: 200px;
+    border: 2px solid green;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+}
+
+.options h2 {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.options figure img {
+    height: 125px;
+    width: auto;
+    border: 1px solid green;
+    margin-top: 10px;
+}
+
+.options figcaption {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
 }
 
 .socialmedia a {
@@ -55,6 +124,11 @@ nav, p, section, article {
 
 .hero article {
     position: absolute;
+    width: 90%;
+    height: 21%;
+    left: 48%;
+    top: 40%;
+    transform: translateX(-50%);
 }
 
 .hero img {
@@ -87,6 +161,15 @@ article {
     width: 125px;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid green;
+    font-weight: bold;
+}
+
 footer img {
-    height: 25px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
